@@ -1,4 +1,3 @@
-const { LexModelBuildingService } = require("aws-sdk");
 const spicedPg = require("spiced-pg");
 
 const db = spicedPg(

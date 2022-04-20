@@ -14,7 +14,7 @@ const s3 = require("./s3.js");
 const multer = require("multer");
 const uidSafe = require("uid-safe");
 const path = require("path");
-const { disconnect } = require("process");
+const { disconnect, env } = require("process");
 const { get } = require("express/lib/response");
 
 const diskStorage = multer.diskStorage({
@@ -96,4 +96,6 @@ app.get("*", (req, res) => {
     res.sendFile(`${__dirname}/index.html`);
 });
 
-app.listen(8000, () => console.log(`I'm listening.`));
+app.listen(process.env.PORT || 8000, () =>
+    console.log(`I'm listening on Port 8000.`)
+);
