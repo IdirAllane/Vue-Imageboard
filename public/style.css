@@ -54,7 +54,12 @@ nav p {
     justify-content: space-around;
     margin: 3px 10px -5px 10px;
 }
+.input_flex {
+    flex: 1 2;
+    width: 100px;
+}
 .select_upload_buttons {
+    flex: 0.3 0 100px;
     font-family: "Poppins", sans-serif;
     font-size: 1.15rem;
     padding: 5px 20px;
