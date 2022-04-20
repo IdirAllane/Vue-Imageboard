@@ -105,10 +105,10 @@ select:focus {
     width: 250px;
 }
 #image_grid {
-    width: 99vw;
+    width: 99.5vw;
     grid-area: "main";
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(3, minmax(330px, 700px));
+    grid-template: repeat(2, 1fr) / repeat(3, minmax(330px, 900px));
     grid-auto-rows: 1fr;
     gap: 5px 5px;
     margin: 10px;
